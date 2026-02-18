@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_blob'])) {
         echo "<p style='color:red;'>Error al eliminar: {$e->getMessage()}</p>";
     }
 }
-
+//
 // Subir archivo nuevo
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['zipfile'])) {
     $file = $_FILES['zipfile'];
